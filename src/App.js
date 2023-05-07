@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
 
 function App() {
+
+    const [info, setInfo] = useState('');
+
+    function showWeather(){
+        const currentDate = new Date();
+        let month = currentDate.getMonth() + 1;
+        if (month !== 5){
+            setInfo('Погода не май месяц');
+        } else {
+            setInfo('Погода май месяц');
+        }
+    }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"container"}>
+        <h1 className={"header"}>Определитель погоды</h1>
+        <div className={"container_btn"}>
+            <button onClick={showWeather} className={"button"}>Узнать погоду</button>
+        <div className={"info"}>
+            {info}
+        </div>
+        </div>
     </div>
   );
 }
