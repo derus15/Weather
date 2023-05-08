@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* добавляем свойство для корректного расчета размеров элементов */
+  box-sizing: border-box;
 }
 
 .container{
@@ -18,7 +18,7 @@
   position: absolute;
   top: 2%;
   color: white;
-  font-size: 3rem; /* заменяем значение на rem для адаптивности */
+  font-size: 3rem;
 }
 
 .container_btn{
@@ -29,12 +29,12 @@
 
 .button{
   width: 14vw;
-  height: 4rem; /* заменяем значение на rem для адаптивности */
+  height: 4rem;
   border: 2px black solid;
-  border-radius: 2rem; /* заменяем значение на rem для адаптивности */
+  border-radius: 2rem;
   background-color: white;
   color: black;
-  font-size: 1.5rem; /* заменяем значение на rem для адаптивности */
+  font-size: 1.5rem;
   margin-top: 15%;
 }
 
@@ -50,8 +50,8 @@
 
 .info{
   position: absolute;
-  margin-bottom: 25rem; /* заменяем значение на rem для адаптивности */
+  margin-bottom: 25rem;
   color:white;
-  font-size: 1.6rem; /* заменяем значение на rem для адаптивности */
+  font-size: 1.6rem;
   margin-top: 3%;
 }
